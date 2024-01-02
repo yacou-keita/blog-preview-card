@@ -65,12 +65,25 @@ body {
     flex-direction: column;
     gap: 1rem;
     padding: 1rem;
-    width: 16rem;
+    width: 17rem;
     background-color: var(--White);
     border-radius: 10px;
     border: 1px solid var(--Black);
     text-align: left;
-    box-shadow: 10px 5px 5px var(--Black);
+    box-shadow: 5px 5px var(--Black);
+    transition: .5s;
+}
+
+.card:hover {
+    box-shadow: 10px 10px var(--Black);
+}
+
+.card > h3 {
+    transition: .5s;
+}
+.card:hover > h3 {
+    color: var(--Yellow);
+    cursor: pointer;
 }
 
 .card img {
@@ -80,6 +93,18 @@ body {
 .card small {
     font-size: .7rem;
     font-size: 11px;
+}
+
+.card .avatar {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.card .avatar img {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
 }
 
 .attribution {
